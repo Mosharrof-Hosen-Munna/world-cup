@@ -16,6 +16,11 @@ body{
     
     margin-top: 25px;
 }
+.header-wrapper:hover .header-img{
+    transform: scale(0.7) rotate(360deg);
+    transition: 2s ease-in-out;
+}
+
 .header-left{
     padding: 30px;
 }
@@ -44,6 +49,7 @@ body{
 }
 .header-img img{
     width: 100%;
+    transition: 1s;
 }
 /* header style end */
 
@@ -81,6 +87,7 @@ body{
 .side-menu a.active{
     background-color: crimson;
     color: white;
+    border-color: crimson;
 }
 
 .card-container{
@@ -132,6 +139,30 @@ body{
     
 }
 
+.match-card{
+    padding: 15px;
+    border: 1px solid rgba(153, 153, 153, 0.349);
+    border-radius: 5px;
+}
+.match-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.match-header img{
+    width:100%;
+    
+}
+.match-header div{
+    font-weight: 600;
+   
+}
+
+.match-body{
+    text-align: center;
+}
+
 /* main section style end */
 
 /* footer start */
@@ -154,9 +185,25 @@ footer hr{
     justify-content: space-around;
     color: rgb(207, 207, 207);
     flex-wrap: wrap;
+    padding-left: 0;
 }
 .footer-menu li{
     margin: 15px 20px;
+}
+.social-icons{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    padding: 15px;
+}
+.social-icons i{
+    
+    font-size: 25px;
 }
 /* footer end */
 
@@ -265,6 +312,9 @@ footer hr{
         border-radius: 10px;
         text-align: center;
         font-size: 20px;
+    }
+    .view-all-button{
+        display: none;
     }
   }
 
